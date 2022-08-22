@@ -9,6 +9,8 @@ async function init() {
   client = new MongoClient(url);
   const dbName = 'todo';
 
+  console.log(`Attempting to connect to mongo using host ${host}`);
+
   await client.connect();
   db = client.db(dbName);
   collection = db.collection('todo');
