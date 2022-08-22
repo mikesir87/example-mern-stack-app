@@ -10,35 +10,19 @@ The Express backend is configured to serve static content, allowing the React ap
 
 ## Development
 
-### A database
-
-This application requires Mongo. If you haven't yet, install it and then start a database.
+This repo contains a `docker-compose.yml` file that allows you to simply run:
 
 ```
-mongod
+docker compose up -d
 ```
 
-### The backend
+The backend is available at http://localhost:4000 and the frontend is at http://localhost:3000.
 
-To start the backend, run the following in the `backend` directory:
-
-```
-yarn install
-yarn dev
-```
-
-The backend runs on [localhost:4000](http://localhost:4000)
-
-### The frontend
-
-To start the frontend, run the following in the `client` directory:
+When you're done, simply run:
 
 ```
-yarn install
-yarn start
+docker compose down
 ```
-
-The react app will start on [localhost:3000](http://localhost:3000).
 
 
 ## Deploying
